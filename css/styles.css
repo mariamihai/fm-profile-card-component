@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+:root {
+  --dark-cyan-color: hsl(185, 75%, 39%);
+  --dark-blue-color: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+}
+
+body {
+  margin: 0;
+  font-family: "Kumbh Sans";
+  font-size: 15px;
+  position: relative;
+  background-color: var(--dark-cyan-color);
+}
+
+.card {
+  padding-bottom: 50px;
+  margin: 4em 1.5em;
+}
+
+.card .img-top {
+  width: 60%;
+  margin-top: -7em;
+  margin-left: -2em;
+}
+
+.card .description {
+  text-align: center;
+}
+
+.card .description .img-card {
+  border-radius: 1em 1em 0 0;
+}
+
+.card .description .user {
+  background-color: white;
+  margin-top: -1em;
+}
+
+.card .description .user .img-user {
+  text-align: center;
+  border-radius: 50%;
+  border: 5px solid white;
+  margin-top: -3em;
+}
+
+.card .description .user .user-details {
+  padding-top: 1em;
+}
+
+.card .description .user .user-details .name {
+  color: var(--dark-blue-color);
+  font-weight: bold;
+}
+
+.card .description .user .user-details .age {
+  color: var(--dark-grayish-blue);
+}
+
+.card .description .user .location {
+  color: var(--dark-grayish-blue);
+  padding: 1em 0;
+}
+
+.card .description .user-info {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+  border-top: 0.05em solid var(--dark-grayish-blue);
+  padding: 2em;
+  border-radius: 0 0 1em 1em;
+}
+
+.card .description .user-info .numbers {
+  color: var(--dark-blue-color);
+  font-weight: bold;
+}
+
+.card .description .user-info .type {
+  color: var(--dark-grayish-blue);
+}
+
+.card .img-bottom {
+  width: 60%;
+  margin-bottom: -5em;
+  margin-right: 2em;
+}
+
+.attribution {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 25px;
+}
+/*# sourceMappingURL=styles.css.map */
