@@ -10,7 +10,6 @@ body {
   margin: 0;
   font-family: "Kumbh Sans";
   font-size: 15px;
-  position: relative;
   background-color: var(--dark-cyan-color);
 }
 
@@ -20,20 +19,17 @@ body {
 }
 
 .card .img-top {
-  width: 60%;
-  margin-top: -7em;
-  margin-left: -2em;
-}
-
-.card .description {
-  text-align: center;
+  margin-top: -50em;
+  margin-left: -40em;
 }
 
 .card .description .img-card {
+  width: 100%;
   border-radius: 1em 1em 0 0;
 }
 
 .card .description .user {
+  text-align: center;
   background-color: white;
   margin-top: -1em;
 }
@@ -85,14 +81,49 @@ body {
 
 .card .img-bottom {
   width: 60%;
-  margin-bottom: -5em;
-  margin-right: 2em;
+  margin-bottom: -25em;
+  margin-right: -100em;
 }
 
 .attribution {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  height: 25px;
+  padding: 1em 1.5em 3em 1.5em;
+  height: 40px;
+  background-color: var(--dark-gray);
+  border-radius: 2em 0 4em 0;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--dark-grayish-blue);
+}
+
+.attribution img {
+  padding-left: 1em;
+}
+
+@media only screen and (min-width: 400px) {
+  .attribution {
+    padding: 1em 1.5em 3em 1.5em;
+    position: absolute;
+    right: 0;
+    max-width: 350px;
+    height: 25px;
+    border-radius: 2em 0 4em 0;
+  }
+  .attribution img {
+    padding-left: 1em;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .card {
+    margin: 4em 30em;
+  }
+  .card .description .img-card {
+    height: 170px;
+  }
+  .card .img-bottom {
+    width: 250%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

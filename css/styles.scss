@@ -1,97 +1,134 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
 :root {
-    --dark-cyan-color: hsl(185, 75%, 39%);
-    --dark-blue-color: hsl(229, 23%, 23%);
-    --dark-grayish-blue: hsl(227, 10%, 46%);
-    --dark-gray: hsl(0, 0%, 59%);
+  --dark-cyan-color: hsl(185, 75%, 39%);
+  --dark-blue-color: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
 }
 
 body {
-    margin: 0;
-    font-family: "Kumbh Sans";
-    font-size: 15px;
-    position: relative;
-    background-color: var(--dark-cyan-color);
+  margin: 0;
+  font-family: "Kumbh Sans";
+  font-size: 15px;
+  background-color: var(--dark-cyan-color);
 }
 
-
 .card {
-    padding-bottom: 50px;
-    margin: 4em 1.5em;
+  padding-bottom: 50px;
+  margin: 4em 1.5em;
 
-    .img-top {
-        width: 60%;
-        margin-top: -7em;
-        margin-left: -2em;
+  .img-top {
+    margin-top: -50em;
+    margin-left: -40em;
+  }
+
+  .description {
+    .img-card {
+      width: 100%;
+      border-radius: 1em 1em 0 0;
     }
 
-    .description {
+    .user {
+      text-align: center;
+      background-color: white;
+      margin-top: -1em;
+
+      .img-user {
         text-align: center;
+        border-radius: 50%;
+        border: 5px solid white;
+        margin-top: -3em;
+      }
 
-        .img-card {
-            border-radius: 1em 1em 0 0 ;
+      .user-details {
+        padding-top: 1em;
+
+        .name {
+          color: var(--dark-blue-color);
+          font-weight: bold;
         }
 
-        .user {
-            background-color: white;
-            margin-top: -1em;
-
-            .img-user {
-                text-align: center;
-                border-radius: 50%;
-                border: 5px solid white;
-                margin-top: -3em;
-            }
-
-            .user-details {
-                padding-top: 1em;
-
-                .name {
-                    color: var(--dark-blue-color);
-                    font-weight: bold;
-                }
-    
-                .age {
-                    color: var(--dark-grayish-blue);
-                }
-            }
-
-            .location {
-                color: var(--dark-grayish-blue);
-                padding: 1em 0;
-            }
+        .age {
+          color: var(--dark-grayish-blue);
         }
+      }
 
-        .user-info {
-            background-color: white;
-            display: flex;
-            place-content: space-between;
-            border-top: 0.05em solid var(--dark-grayish-blue);
-            padding: 2em;
-            border-radius: 0 0 1em 1em ;
-
-            .numbers {
-                color: var(--dark-blue-color);
-                font-weight: bold;
-            }
-
-            .type {
-                color: var(--dark-grayish-blue);
-            }
-        }
+      .location {
+        color: var(--dark-grayish-blue);
+        padding: 1em 0;
+      }
     }
 
-    .img-bottom {
-        width: 60%;
-        margin-bottom: -5em;
-        margin-right: 2em;
+    .user-info {
+      background-color: white;
+      display: flex;
+      place-content: space-between;
+      border-top: 0.05em solid var(--dark-grayish-blue);
+      padding: 2em;
+      border-radius: 0 0 1em 1em;
+
+      .numbers {
+        color: var(--dark-blue-color);
+        font-weight: bold;
+      }
+
+      .type {
+        color: var(--dark-grayish-blue);
+      }
     }
+  }
+
+  .img-bottom {
+    width: 60%;
+    margin-bottom: -25em;
+    margin-right: -100em;
+  }
 }
 
 .attribution {
+  padding: 1em 1.5em 3em 1.5em;
+  height: 40px;
+  background-color: var(--dark-gray);
+  border-radius: 2em 0 4em 0;
+
+  a {
+    text-decoration: none;
+    color: var(--dark-grayish-blue);
+  }
+
+  img {
+    padding-left: 1em;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .attribution {
+    padding: 1em 1.5em 3em 1.5em;
     position: absolute;
     right: 0;
-    bottom: 0;
+    max-width: 350px;
     height: 25px;
+    border-radius: 2em 0 4em 0;
+
+    img {
+      padding-left: 1em;
+    }
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .card {
+    margin: 4em 30em;
+
+    .description {
+      .img-card {
+        height: 170px;
+      }
+    }
+
+    .img-bottom {
+      width: 250%;
+    }
+  }
 }
